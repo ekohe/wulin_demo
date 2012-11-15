@@ -1,0 +1,16 @@
+defaults: &defaults
+  adapter: postgresql
+  username: username
+  password:
+
+development:
+  <<: *defaults
+  database: wulin_demo
+
+test:
+  <<: *defaults
+  database: wulin_demo_test
+
+production:
+  <<: *defaults
+  database: wulin_demo
