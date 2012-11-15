@@ -10,6 +10,10 @@ class PostGrid < WulinMaster::Grid
   column :title
   column :published_at
   column :content
+  column :bloger
 
-  load_default_actions # Add default toolbar items for this grid
+  action :add, only: [:PostScreen]
+  action :delete, only: [:PostScreen]
+  action :edit, only: [:PostScreen]
+  action :filter
 end

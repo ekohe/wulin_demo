@@ -11,5 +11,8 @@ class BlogerGrid < WulinMaster::Grid
   column :age
   column :country
 
-  load_default_actions # Add default toolbar items for this grid
+  action :add, only: [:BlogerScreen]
+  action :delete, only: [:BlogerScreen]
+  action :edit, only: [:BlogerScreen]
+  action :filter
 end
