@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121115074737) do
+ActiveRecord::Schema.define(:version => 20121115080431) do
+
+  create_table "blogers", :force => true do |t|
+    t.string   "name"
+    t.integer  "age"
+    t.integer  "country_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "countries", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "grid_states", :force => true do |t|
     t.integer  "user_id"
@@ -24,5 +39,13 @@ ActiveRecord::Schema.define(:version => 20121115074737) do
   end
 
   add_index "grid_states", ["user_id"], :name => "index_grid_states_on_user_id"
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.datetime "published_at"
+    t.text     "content"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
 end

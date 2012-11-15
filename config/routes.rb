@@ -1,4 +1,10 @@
 WulinDemo::Application.routes.draw do
+  resources :posts
+
+  resources :countries
+
+  resources :blogers
+
   root :to => 'homepage#index'
 
   # The priority is based upon order of creation:

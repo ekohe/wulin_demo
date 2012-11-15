@@ -1,8 +1,9 @@
 class HomepageController < WulinMaster::HomeController
   menu do |c|
     submenu 'Default' do
-      item 'Default', url: "#"
-      # item DefaultScreen
+      item BlogerScreen
+      item CountryScreen
+      item PostScreen
     end
   end
 end
