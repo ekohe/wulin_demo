@@ -1,0 +1,3 @@
+[submodule "vendor/gems/wulin_master"]
+	path = vendor/gems/wulin_master
+	url = git@git.ekohe.com:wulin_master.git
