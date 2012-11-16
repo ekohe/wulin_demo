@@ -1,9 +1,7 @@
 class BlogerGrid < WulinMaster::Grid
   title 'Blogers'
 
-  model Bloger
-
-  path '/blogers'    
+  model Bloger  
 
   fill_window
 
@@ -15,4 +13,7 @@ class BlogerGrid < WulinMaster::Grid
   action :delete, only: [:BlogerScreen]
   action :edit, only: [:BlogerScreen]
   action :filter
+  
+  action :show_info, title: "Information", icon: 'wizard'
+  behavior :say_hello, only: [:BlogerScreen]
 end
