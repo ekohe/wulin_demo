@@ -4,5 +4,5 @@ class BloggersPostsScreen < WulinMaster::Screen
   path '/bloggers'
 
   grid BloggerGrid, height: '50%', cell_editable: false
-  grid PostGrid, height: '50%', cell_editable: false, master_grid: 'BloggerGrid'
+  grid PostGrid, height: '50%', cell_editable: false, master_grid: 'BloggerGrid', eager_loading: false
 end
