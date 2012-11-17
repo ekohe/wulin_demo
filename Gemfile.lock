@@ -1,5 +1,6 @@
-PATH
-  remote: vendor/gems/wulin_master
+GIT
+  remote: git://github.com/ekohe/wulin_master.git
+  revision: e0d18792244ab1d8408ee086411d8e3a94fa0369
   specs:
     wulin_master (0.6.1)
       compass (~> 0.12.alpha)

@@ -4,7 +4,7 @@ gem 'rails', '3.2.8'
 gem 'pg'
 
 # Wulin Suite
-gem 'wulin_master', :path => 'vendor/gems/wulin_master'
+gem 'wulin_master', :git => 'git://github.com/ekohe/wulin_master.git'
 
 
 # Gems used only for assets and not required
