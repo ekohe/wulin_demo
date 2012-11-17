@@ -1,7 +1,6 @@
 require "rvm/capistrano"
 
 set :application, "wulin_demo"
-set :git_enable_submodules, 1
 ssh_options[:forward_agent] = true
 set :repository,  "git@github.com:ekohe/wulin_demo.git"
 set :rvm_ruby_string, "1.9.3-p0@#{application}"
