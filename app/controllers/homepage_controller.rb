@@ -1,12 +1,12 @@
 class HomepageController < WulinMaster::HomeController
   menu do |c|
     submenu 'Resources' do
-      item BlogerScreen
+      item BloggerScreen
       item CountryScreen
       item PostScreen
     end
     submenu 'Relation' do
-      item BlogersPostsScreen
+      item BloggersPostsScreen
     end
   end
 end

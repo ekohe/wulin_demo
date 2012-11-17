@@ -3,7 +3,7 @@ WulinDemo::Application.routes.draw do
 
   resources :countries
 
-  resources :blogers
+  resources :bloggers
 
   root :to => 'homepage#index'
 

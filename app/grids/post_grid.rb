@@ -10,7 +10,7 @@ class PostGrid < WulinMaster::Grid
   column :title
   column :published_at
   column :content
-  column :bloger
+  column :blogger
 
   action :add, only: [:PostScreen]
   action :delete, only: [:PostScreen]

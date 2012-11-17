@@ -1,4 +1,4 @@
-class Bloger < ActiveRecord::Base
+class Blogger < ActiveRecord::Base
   attr_accessible :name, :age, :country_id  
   
   belongs_to :country

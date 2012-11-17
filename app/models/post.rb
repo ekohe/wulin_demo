@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  attr_accessible :title, :published_at, :content, :bloger_id
+  attr_accessible :title, :published_at, :content, :blogger_id
   
-  belongs_to :bloger
+  belongs_to :blogger
 end
