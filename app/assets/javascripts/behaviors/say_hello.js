@@ -8,7 +8,7 @@ WulinMaster.behaviors.sayHello = $.extend({}, WulinMaster.behaviors.BaseBehavior
   },
 
   handler: function() {
-    alert("Hello RubyConfChina 2012!");
+    displayNewNotification("Hello RubyConfChina 2012!");
   }
 
 });
