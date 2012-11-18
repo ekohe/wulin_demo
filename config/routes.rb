@@ -1,4 +1,8 @@
 WulinDemo::Application.routes.draw do
+  resources :bloggers_publishers
+  
+  resources :publishers
+
   resources :posts
 
   resources :countries

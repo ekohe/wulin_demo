@@ -7,6 +7,7 @@ class HomepageController < WulinMaster::HomeController
     end
     submenu 'Relation' do
       item BloggersPostsScreen
+      item PublisherScreen
     end
   end
 end

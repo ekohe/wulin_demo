@@ -1,3 +1,4 @@
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 
 set :application, "wulin_demo"
