@@ -1,8 +1,8 @@
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 
 set :application, "wulin_demo"
 ssh_options[:forward_agent] = true
+default_run_options[:pty] = true
 set :repository,  "git@github.com:ekohe/wulin_demo.git"
 set :rvm_ruby_string, "1.9.3-p0@#{application}"
 set :rvm_type, :system
@@ -25,6 +25,7 @@ end
 before 'deploy:restart', :configure
 after 'configure', 'deploy:assets:precompile'
 after 'deploy:restart', 'deploy:cleanup'
+after 'deploy:restart', 'deploy:migrate'
 
 namespace :deploy do
   [:start, :stop, :restart].each do |action|
