@@ -5,7 +5,7 @@ gem 'pg'
 
 # Wulin Suite
 #gem 'wulin_master', :git => 'git://github.com/ekohe/wulin_master.git'
-
+gem 'wulin_master', :path => 'vendor/gems/wulin_master'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,7 +19,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem "jquery-rails", "2.1.3"
 
 # Use thin as the web server
 gem 'thin'

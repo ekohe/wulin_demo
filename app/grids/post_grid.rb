@@ -12,6 +12,7 @@ class PostGrid < WulinMaster::Grid
   column :content
   column :blogger
 
+  action :detail_add, title: 'Add', icon: 'add', only: [:BloggersPostsScreen]
   action :add, only: [:PostScreen]
   action :delete, only: [:PostScreen]
   action :edit, only: [:PostScreen]
